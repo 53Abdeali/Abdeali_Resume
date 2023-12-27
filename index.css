@@ -1,3 +1,35 @@
+.pulse{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+.pulse-loader{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    animation: pulsered 3s linear infinite;
+}
+
+@keyframes pulsered {
+    0%,100%{
+        transform: scale(1.0);
+        background-color: white;
+        border-radius: 1%;
+    }
+    50%{
+        transform:scale(1.2);
+        background-color: rgb(58, 47, 58);
+        border-radius: 50%;
+    }
+}
+
+
 h1{
     color: white;
     background-color: rgb(58, 47, 58);
